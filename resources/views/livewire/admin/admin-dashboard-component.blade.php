@@ -1,3 +1,3 @@
 <div>
-    <p>Admin dashboard
+    <p>Admin dashboard</p>
 </div>

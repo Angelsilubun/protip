@@ -41,12 +41,12 @@ Route::get('/checkout', CheckoutComponent::class);
 //     })->name('dashboard');
 // });
 
-//for user or customer
-Route::middleware(['auth:sanctum', 'verified'])->group(function(){
-    Route::get('/user/dashboard', UserDashboardComponent::class)->name('user.dashboard');
+//For user
+Route::middleware(['auth:sanctum','verified'])->group(function(){
+    Route::get('/user/dashboard',UserDashboardComponent::class)->name('user.dashboard');
 });
 
-//for admin
-Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function(){
-    Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
+//For admin
+Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
+    Route::get('/admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
 });
