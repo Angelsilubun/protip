@@ -250,7 +250,6 @@ return [
         'validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Cart' => Glodemans\Shoppingcart\Facades\Cart::class,
-
     ],
 
 
